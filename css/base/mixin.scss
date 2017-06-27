@@ -1,0 +1,47 @@
+@mixin transition($in) {
+  transition:$in;
+  -webkit-transition:$in;
+  -moz-transition:$in;
+  -o-transition:$in;
+  -ms-transition:$in;
+} 
+@mixin animation($in) {
+  animation:$in;
+  -webkit-animation:$in;
+  -moz-animation:$in;
+  -o-animation:$in;
+  -ms-animation:$in;
+}
+@mixin transform($in) {
+  transform:$in;
+  -webkit-transform:$in;
+  -moz-transform:$in;
+  -o-transform:$in;
+  -ms-transform:$in;
+}
+ 
+@font-face {
+  font-family: 'Conv_UTM Avo';
+  src: url('../fonts/UTM Avo.eot');
+  src: local('☺'), url('../fonts/UTM Avo.woff') format('woff'), url('../fonts/UTM Avo.ttf') format('truetype'), url('../fonts/UTM Avo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Conv_UTM AvoBold';
+  src: url('fonts/UTM AvoBold.eot');
+  src: local('☺'), url('../fonts/UTM AvoBold.woff') format('woff'), url('../fonts/UTM AvoBold.ttf') format('truetype'), url('../fonts/UTM AvoBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes shakeThatBooty {
+  33% {
+    @include transform(rotateZ(10deg));
+  }
+  67% {
+    @include transform(rotateZ(-10deg));
+  }
+  100% {
+    @include transform(rotateZ(10deg));
+  }
+}

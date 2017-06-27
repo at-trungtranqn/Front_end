@@ -2,7 +2,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <title></title>
 </head>
 <body>
@@ -25,7 +25,8 @@
         </div>
     </div> 
     <div class="bottom">
-      <div class="contain">  
+      <div class="parent-contain">
+        <div class="contain">  
         <nav class="menu-nav">
           <ul class="menu">
             <li><a href="">Trang chủ   </a></li>
@@ -37,25 +38,24 @@
           </ul>
         </nav>
         <div class="social-header">
-          <ul class="facebook">
+          <a href="/a">
             <img src="../images/facebook.png">
-          </ul>
-          <ul class="google">
+          </a>
+          <a href="/a">
             <img src="../images/google.png">
-          </ul>
-          <ul class="youtube">
+          </a>
+          <a href="/a">
             <img src="../images/youtube.png">
-          </ul>
+          </a>
         </div>
+      </div>
       </div>  
       <div class="banner">
-        <div class="contain">
-          <div class="cate-breadcrumb">
-            <ul class="breadcrumb">
-              <li><a href="">Trang chủ  </a></li>
-              <li><a href=""> Dịch vụ y tế  </a></li>
-            </ul>
-          </div>
+        <div class="contain contain-breadcrumb">
+          <ul class="breadcrumb">
+            <li><a href="">Trang chủ  </a></li>
+            <li><a href=""> Dịch vụ y tế  </a></li>
+          </ul>
         </div>  
       </div> 
     </div>
@@ -63,8 +63,12 @@
     <main>
       <aside id="sidebar">
         <div id = "menu-adults" class="box">
-          <span class="title-box">Người lớn</span>
-          <ul class="menu">
+          <span class="title-box">
+            Người lớn
+          </span>
+          <span class="icon">
+          </span>
+          <ul class="menu-aside">
             <li><a href="">Đau cổ-vai-tay</a></li>
             <li><a href="">Đau cột sống</a></li>
             <li><a href="">Thoát vị đĩa đệm</a></li>
@@ -78,23 +82,25 @@
         </div>
         <div id = "menu-children" class="box">
           <span class="title-box">Trẻ em</span> 
-          <ul class="menu">
-            <li><a href=""></a></li>
+          <ul class="menu-aside">
+            
           </ul>
         </div>
-        <div id= "book-form" class="box">
-          <h2>Đặt lịch khám</h2>   
+        <div id= "book-form" class="book-form box">
+          <h2>Đặt lịch khám</h2> 
+          <hr>  
           <form>
             <input type="text" name="full-name" placeholder="Họ & Tên">
             <input type="text" name="address" placeholder="Địa chỉ">
             <input type="text" name="phone" placeholder="Số điện thoại">
             <input type="datetime" name="time" placeholder="Thời gian">
-            <input type="submit" name="submit" value="Đặt lịch">
+            <input type="submit" name="submit" value="Đặt lịch" class="button">
           </form>
         </div>
       </aside>
         <div class="content">
-          <div class="block">
+          <ul class="list-item">
+            <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_1.png">
@@ -106,11 +112,13 @@
               </div>
               <div class="text-descript"><p>Loẻm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_2.png">
@@ -122,11 +130,13 @@
               </div>
               <div class="text-descript"><p>Loẻm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_3.png">
@@ -138,11 +148,13 @@
               </div>
               <div class="text-descript"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_4.png">
@@ -154,11 +166,13 @@
               </div>
               <div class="text-descript"><p>Loẻm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div> 
-          <div class="block">
+            </a>
+          </li> 
+          <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_5.png">
@@ -170,11 +184,13 @@
               </div>
               <div class="text-descript"><p>Loẻm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_6.png">
@@ -186,11 +202,13 @@
               </div>
               <div class="text-descript"><p>Loẻm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                 <img src="../images/news_7.png">
@@ -202,11 +220,13 @@
               </div>
               <div class="text-descript"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                   <img src="../images/news_8.png">
@@ -218,11 +238,13 @@
               </div>
               <div class="text-descript"><p>Loẻm ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
+            <a href="">
+               <div class="arrow-link">
               <img src="../images/arrow_right.png">
             </div>
-          </div>
-          <div class="block">
+            </a>
+          </li>
+          <li class="item">
             <div class="img-news">
               <a href="">
                   <img src="../images/news_9.png">
@@ -234,39 +256,58 @@
               </div>
               <div class="text-descript"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p></div>
             </div>
-            <div class="arrow-link">
-              <img src="../images/arrow_right.png">
-            </div>
+            <a href="">
+              <div class="arrow-link">
+                <img src="../images/arrow_right.png">
+              </div>
+            </a>
+          </li> 
+          </ul> 
         </div>
     </main>
     <footer>
-      <div class="footer-top">
-        <span>Về phòng khám</span>
+      <div class="contain">
+        <div class="footer-top">
         <div class="infomation">
-          <ul class="Info">
+          <span class="title-footer">Về phòng khám</span>
+          <ul>
             <li>Giới thiệu chung</li>
             <li>Nhân lực</li>
             <li>Trang thiết bị và cở sở vật chất</li>
           </ul>
         </div>
-        <div class="support">
-          <span>Hỗ trợ</span>  
-          <ul >
+        <div class="infomation">
+          <span class="title-footer">Hỗ trợ</span>  
+          <ul>
             <li>Tư vấn sức khỏe</li>
             <li>Y học thường thức</li>
             <li>Đặt lịch khám</li>
           </ul>
         </div>
-        <div class="social-footer">
-          <span>Kết nối xã hội </span>
-          <ul>
-            <li></li>
+        <div class="infomation">
+          <span class="title-footer">Kết nối xã hội </span>
+          <ul class="social-ul">
+            <li>
+              <img src="../images/facebook2.png">
+              <span>facebook</span>
+            </li>
+            <li>
+              <img src="../images/google2.png">
+              <span>google</span>
+            </li>
+            <li>
+              <img src="../images/youtube2.png">
+              <span>youtube</span>
+            </li>
           </ul>
         </div>
+        </div>
+       
+        <div class="copyright">
+          <div class="left">@2015- Bản quyền thuộc về phòng khám chuyên khoa</div>
+          <div class="right">Phát triển bởi nhattrung</div>
+        </div>
       </div>
-      <div class="copyright">
-        <div class="left">@2015- Bản quyền thuộc về phòng khám chuyên khoa</div>
-        <div class="right">Phát triển bởi nhattrung</div>
       </div>
     </footer>
 </body>
